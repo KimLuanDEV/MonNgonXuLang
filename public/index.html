@@ -3443,6 +3443,1126 @@ footer {
 
 
 
+/* ==========================================
+   MON NGON XU LANG
+   FOOD STORE REDESIGN 2026
+   ========================================== */
+
+:root {
+  --food-red: #742c1f;
+  --food-orange: #c65b32;
+  --food-gold: #e9b76b;
+  --food-cream: #fff7ec;
+  --food-dark: #30251f;
+  --food-muted: #8a7768;
+  --food-border: #efdfcc;
+  --food-white: #fffdf9;
+  --ink: var(--food-dark);
+  --muted: var(--food-muted);
+  --line: var(--food-border);
+  --bg: var(--food-cream);
+  --accent: var(--food-orange);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--food-cream);
+  color: var(--food-dark);
+  font-family: system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+}
+
+.promo-strip {
+  background: var(--food-red);
+  color: #ffe4bd;
+  padding: 11px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* HEADER */
+
+header {
+  background: rgba(255, 253, 249, .97);
+  border-bottom: 1px solid var(--food-border);
+  box-shadow: 0 4px 20px #5424140c;
+}
+
+.bar {
+  max-width: 1250px;
+  padding: 17px 24px;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  color: var(--food-red);
+  font-weight: 800;
+  letter-spacing: -.8px;
+}
+
+.logo span {
+  color: var(--food-orange);
+}
+
+nav a {
+  color: #624c3e;
+  font-weight: 650;
+}
+
+nav a:hover {
+  color: var(--food-orange);
+}
+
+.search {
+  background: #fff7ed;
+  border: 1px solid #ead8c3;
+  border-radius: 14px;
+  padding: 13px 17px;
+  color: var(--food-dark);
+}
+
+.search:focus {
+  border-color: var(--food-orange);
+  box-shadow: 0 0 0 3px #c65b321a;
+}
+
+.cartbtn {
+  background: var(--food-red);
+  border: 0;
+  border-radius: 14px;
+  color: white;
+  box-shadow: 0 5px 16px #742c1f24;
+  font-weight: 700;
+}
+
+.cartbtn:hover {
+  background: var(--food-orange);
+}
+
+/* HERO */
+
+.wrap {
+  max-width: 1250px;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 70% 40%,
+      #f5d8a9 0%, transparent 48%),
+    linear-gradient(120deg, #fff0d9, #f9e2bf);
+  border: 1px solid #ecd3ae;
+  border-radius: 28px;
+  min-height: 425px;
+  margin: 26px 0 55px;
+  box-shadow: 0 15px 35px #783c1810;
+  overflow: hidden;
+}
+
+.hero-copy {
+  padding: 60px 52px;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  color: var(--food-orange);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.13;
+  letter-spacing: -1.4px;
+  color: var(--food-dark);
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: var(--food-red);
+}
+
+.hero p {
+  color: #765e4c;
+  font-size: 15px;
+  line-height: 1.85;
+  max-width: 440px;
+}
+
+.primary {
+  background: var(--food-red);
+  color: #fff;
+  border: none;
+  border-radius: 13px;
+  padding: 16px 24px;
+  font-weight: 800;
+  box-shadow: 0 7px 20px #742c1f25;
+}
+
+.primary:hover {
+  background: var(--food-orange);
+  transform: translateY(-2px);
+}
+
+.food-hero-note {
+  margin-top: 23px;
+  color: #9a6c48;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.hero-art {
+  background:
+    radial-gradient(circle, #f6d8a8, #e9bb7c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-hero-emblem {
+  width: min(280px, 80%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid #fff3da;
+  outline: 2px solid #a95736;
+  outline-offset: 8px;
+  background: radial-gradient(
+    circle, #a94d2c, #69291e
+  );
+  color: #ffe5b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  box-shadow: 0 20px 45px #5a2a2033;
+  transform: rotate(-5deg);
+}
+
+.food-hero-emblem span {
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.food-hero-emblem strong {
+  font-family: Georgia, serif;
+  font-size: clamp(27px, 3vw, 43px);
+  line-height: 1.1;
+}
+
+.food-hero-emblem small {
+  font-size: 9px;
+  letter-spacing: 1.8px;
+}
+
+/* MENU */
+
+.section-head h2 {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  color: var(--food-red);
+  font-weight: 800;
+}
+
+.section-head p {
+  color: var(--food-muted);
+}
+
+#resultCount {
+  color: #a17a57;
+}
+
+.filters {
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filter {
+  background: #fffdf9;
+  color: #795b46;
+  border: 1px solid #e9d5bd;
+  border-radius: 30px;
+  padding: 11px 19px;
+  font-weight: 700;
+}
+
+.filter.active,
+.filter:hover {
+  background: var(--food-red);
+  border-color: var(--food-red);
+  color: white;
+}
+
+/* PRODUCT CARDS */
+
+.grid {
+  gap: 19px;
+}
+
+.grid .product {
+  background: #fffdf9;
+  border: 1px solid #f0e1cf;
+  border-radius: 19px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #7d47200b;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.grid .product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 30px #7d47201c;
+}
+
+.grid .product .visual {
+  background: #fff4e5;
+  border-bottom: 1px solid #f4e6d5;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.grid .product .visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.grid .product .info {
+  padding: 16px;
+}
+
+.grid .product .info small {
+  color: #a08367;
+}
+
+.grid .product .info h3 {
+  color: var(--food-dark);
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.grid .product .price {
+  color: #b44024;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.grid .product .tag {
+  background: #fff4dd;
+  color: var(--food-red);
+  border: 1px solid #f2d7a7;
+  border-radius: 20px;
+  font-weight: 750;
+}
+
+.grid .product .add {
+  background: #fff0df;
+  border: 1px solid #edc9a9;
+  color: var(--food-red);
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 800;
+}
+
+.grid .product .add:hover {
+  background: var(--food-red);
+  color: white;
+  border-color: var(--food-red);
+}
+
+/* PAGINATION */
+
+.product-pagination {
+  gap: 8px;
+  margin: 32px 0;
+}
+
+.page-btn {
+  background: #fffdf9;
+  border: 1px solid #e8d5c0;
+  border-radius: 11px;
+  color: #795b46;
+}
+
+.page-btn.active {
+  background: var(--food-red);
+  border-color: var(--food-red);
+  color: white;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #fbe9d5;
+  border-color: var(--food-orange);
+}
+
+/* BENEFITS */
+
+.benefits {
+  background: #f8ead7;
+  border: 1px solid #ecd7bc;
+  border-radius: 22px;
+  box-shadow: none;
+}
+
+.benefits h2,
+.benefits strong {
+  color: var(--food-red);
+}
+
+.benefits p {
+  color: #826c58;
+}
+
+/* CART */
+
+.panel {
+  background: #fffaf3;
+}
+
+.panel-head {
+  color: var(--food-red);
+}
+
+.cart-row {
+  border-color: #efdfcc;
+}
+
+.cart-items .cart-row .thumb {
+  background: #fff1df;
+  border-color: #eddbc5;
+}
+
+.cart-meta strong {
+  color: var(--food-dark);
+}
+
+.qty button {
+  border-color: #e4cdb5;
+  color: var(--food-red);
+  background: white;
+}
+
+.total {
+  color: var(--food-red);
+}
+
+.checkout {
+  background: var(--food-red);
+  border-radius: 13px;
+  color: white;
+  box-shadow: none;
+}
+
+.checkout:hover {
+  background: var(--food-orange);
+}
+
+/* MODALS */
+
+.modal-box,
+.product-detail-box,
+.shop-alert-box {
+  background: #fffdf9;
+  border: 1px solid #f0e0cb;
+  border-radius: 21px;
+}
+
+.product-detail-main {
+  background: #fff4e5;
+}
+
+.product-detail-info h2,
+.shop-alert-title {
+  color: var(--food-red);
+}
+
+.product-detail-price {
+  color: #b44024;
+}
+
+.product-detail-thumbnails button.active {
+  border-color: var(--food-orange);
+}
+
+.shop-alert-button {
+  background: var(--food-red);
+  color: white;
+}
+
+.modal-box input,
+.modal-box textarea {
+  border-color: #e9d7c1;
+  background: #fffdf9;
+}
+
+/* NOTIFICATIONS */
+
+.cart-toast {
+  background: #fffaf2;
+  border: 1px solid #efd5b9;
+  border-left: 5px solid var(--food-orange);
+}
+
+.cart-toast-icon {
+  background: #fff0dc;
+  color: var(--food-red);
+}
+
+.cart-toast-content strong {
+  color: var(--food-red);
+}
+
+.fly-to-cart {
+  border-color: var(--food-orange);
+}
+
+/* FOOTER */
+
+footer {
+  background: #fff1df;
+  border-top: 1px solid #e9d5bb;
+  color: #806754;
+}
+
+/* MOBILE NAV */
+
+.mobile-nav {
+  background: #fffdf9;
+  border-top: 1px solid #eddcc7;
+}
+
+.mobile-nav a,
+.mobile-nav button {
+  color: #866c58;
+}
+
+.mobile-nav .active {
+  color: var(--food-red);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero-copy {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bar {
+    padding: 12px 15px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .search {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .cartbtn {
+    padding: 11px 12px;
+    font-size: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 115px;
+    min-height: 235px;
+    border-radius: 19px;
+    margin: 15px 0 30px;
+  }
+
+  .hero-copy {
+    padding: 24px 0 24px 19px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: .8px;
+  }
+
+  .hero h1 {
+    font-size: clamp(23px, 6vw, 30px);
+    line-height: 1.2;
+    margin: 13px 0;
+    letter-spacing: -.6px;
+  }
+
+  .hero p {
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .primary {
+    padding: 11px 13px;
+    font-size: 10px;
+    border-radius: 10px;
+  }
+
+  .food-hero-note {
+    font-size: 9px;
+    margin-top: 12px;
+  }
+
+  .food-hero-emblem {
+    width: 100px;
+    gap: 6px;
+    outline-offset: 3px;
+    border-width: 2px;
+  }
+
+  .food-hero-emblem span {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .food-hero-emblem strong {
+    font-size: 16px;
+  }
+
+  .food-hero-emblem small {
+    font-size: 6px;
+    letter-spacing: 0;
+  }
+
+  .section-head h2 {
+    font-size: 25px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+  }
+
+  .grid .product {
+    border-radius: 15px;
+  }
+
+  .grid .product .visual {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    padding: 5px;
+  }
+
+  .grid .product .info {
+    padding: 11px;
+  }
+
+  .grid .product .info h3 {
+    font-size: 13px;
+  }
+
+  .grid .product .price {
+    font-size: 16px;
+  }
+
+  .grid .product .add {
+    font-size: 11px;
+    padding: 10px 5px;
+  }
+
+  .filter {
+    padding: 9px 14px;
+    font-size: 12px;
+  }
+
+  .mobile-nav {
+    left: -36px;
+    right: 0;
+    z-index: 100;
+    padding-bottom: calc(9px + env(safe-area-inset-bottom));
+  }
+
+  .panel {
+    background: #fffaf3;
+  }
+}
+
+
+
+
+/* =========================================
+   MON NGON XU LANG - BENEFITS SECTION
+========================================= */
+
+#benefits {
+  display: block;
+  background: linear-gradient(
+    145deg,
+    #fff8ec 0%,
+    #f8e9d3 100%
+  );
+  border: 1px solid #ead4b5;
+  border-radius: 24px;
+  padding: 55px 35px 38px;
+  margin: 60px 0 45px;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(100, 48, 20, .06);
+}
+
+/* HEADING */
+
+#benefits .benefits-heading {
+  margin-bottom: 38px;
+}
+
+#benefits .benefits-eyebrow {
+  display: block;
+  color: #b65b35;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+#benefits .benefits-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(27px, 3.5vw, 39px);
+  line-height: 1.25;
+  color: #742c1f;
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+#benefits .benefits-heading p {
+  color: #8b715b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+#benefits .benefits-line {
+  display: block;
+  width: 65px;
+  height: 3px;
+  margin: 23px auto 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    #d5a35d,
+    #a94e30
+  );
+}
+
+/* BENEFIT GRID */
+
+#benefits .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* BENEFIT CARD */
+
+#benefits .benefit-item {
+  background: rgba(255, 253, 248, .9);
+  border: 1px solid #eddcc5;
+  border-radius: 19px;
+  padding: 34px 23px 30px;
+  transition: transform .25s ease,
+              box-shadow .25s ease,
+              border-color .25s ease;
+}
+
+#benefits .benefit-item:hover {
+  transform: translateY(-5px);
+  border-color: #d9aa78;
+  box-shadow: 0 14px 30px rgba(108, 49, 25, .10);
+}
+
+/* ICON */
+
+#benefits .benefit-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    #fff0d7,
+    #f4d6ab
+  );
+  color: #a64b2b;
+  border: 1px solid #efd0a6;
+}
+
+#benefits .benefit-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+/* CONTENT */
+
+#benefits .benefit-item h3 {
+  font-size: 17px;
+  font-weight: 800;
+  color: #742c1f;
+  line-height: 1.5;
+  margin: 0 0 13px;
+}
+
+#benefits .benefit-item p {
+  font-size: 13px;
+  color: #88705c;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* SIGNATURE */
+
+#benefits .benefits-signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 38px;
+  color: #bd8954;
+}
+
+#benefits .benefits-signature > span {
+  font-size: 17px;
+}
+
+#benefits .benefits-signature p {
+  font-family: Georgia, serif;
+  color: #742c1f;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#benefits .benefits-signature small {
+  display: block;
+  font-family: system-ui, sans-serif;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 1.2px;
+  color: #aa8262;
+  margin-top: 8px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  #benefits {
+    padding: 40px 20px 30px;
+  }
+
+  #benefits .benefits-grid {
+    gap: 12px;
+  }
+
+  #benefits .benefit-item {
+    padding: 26px 14px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  #benefits {
+    margin: 35px 0 25px;
+    padding: 35px 14px 27px;
+    border-radius: 19px;
+  }
+
+  #benefits .benefits-heading {
+    margin-bottom: 26px;
+  }
+
+  #benefits .benefits-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.1px;
+  }
+
+  #benefits .benefits-heading h2 {
+    font-size: 26px;
+  }
+
+  #benefits .benefits-heading p {
+    font-size: 12px;
+  }
+
+  #benefits .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  #benefits .benefit-item {
+    padding: 24px 19px;
+    border-radius: 15px;
+  }
+
+  #benefits .benefit-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 17px;
+    margin-bottom: 15px;
+  }
+
+  #benefits .benefit-icon svg {
+    width: 29px;
+    height: 29px;
+  }
+
+  #benefits .benefit-item h3 {
+    font-size: 15px;
+  }
+
+  #benefits .benefit-item p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  #benefits .benefits-signature {
+    gap: 10px;
+    margin-top: 27px;
+  }
+
+  #benefits .benefits-signature p {
+    font-size: 12px;
+  }
+
+  #benefits .benefits-signature small {
+    font-size: 8px;
+    letter-spacing: .4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #benefits .benefit-item {
+    transition: none;
+  }
+
+  #benefits .benefit-item:hover {
+    transform: none;
+  }
+}
+
+
+
+/* CHỮ KÝ ẨM THỰC XỨ LẠNG */
+
+#benefits .benefits-signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-top: 38px;
+    padding-top: 25px;
+    border-top: 1px solid #e8d3b8;
+}
+
+#benefits .signature-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 18px;
+}
+
+#benefits .signature-ornament span:first-child,
+#benefits .signature-ornament span:last-child {
+    width: 45px;
+    height: 1px;
+    background: #c89a63;
+}
+
+#benefits .signature-ornament span:nth-child(2) {
+    color: #b65b35;
+    font-size: 18px;
+}
+
+#benefits .signature-quote {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(17px, 2.5vw, 23px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #742c1f;
+    letter-spacing: 0;
+    margin: 0 0 12px;
+}
+
+#benefits .signature-subtitle {
+    font-family: system-ui, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    color: #b18156;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    #benefits .benefits-signature {
+        margin-top: 26px;
+        padding-top: 22px;
+    }
+
+    #benefits .signature-quote {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    #benefits .signature-subtitle {
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+}
+
+
+
+/* =========================================
+   FOOTER - MON NGON XU LANG
+========================================= */
+
+footer.food-footer {
+    background: #54251c;
+    color: #f9ead7;
+    border-top: 4px solid #c39155;
+    padding: 0;
+    margin-top: 55px;
+}
+
+.food-footer .food-footer-main {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 55px;
+    padding: 55px 0 45px;
+}
+
+.food-footer .food-footer-logo {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #f1c78c;
+    margin-bottom: 20px;
+}
+
+.food-footer .food-footer-brand p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #ead4bd;
+    max-width: 450px;
+    margin: 0 0 20px;
+}
+
+.food-footer .food-footer-slogan {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #e9b76b;
+}
+
+.food-footer .food-footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.food-footer .food-footer-links h3 {
+    font-size: 16px;
+    color: #f1c78c;
+    margin: 0 0 9px;
+}
+
+.food-footer .food-footer-links a {
+    color: #ead4bd;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.food-footer .food-footer-links a:hover {
+    color: #ffd99d;
+}
+
+.food-footer .food-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 0;
+    border-top: 1px solid rgba(255, 220, 170, .18);
+    color: #d6bda5;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .food-footer .food-footer-main {
+        gap: 30px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    footer.food-footer {
+        margin-top: 35px;
+    }
+
+    .food-footer .food-footer-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 38px 0 30px;
+    }
+
+    .food-footer .food-footer-logo {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .food-footer .food-footer-brand p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .food-footer .food-footer-slogan {
+        font-size: 13px;
+    }
+
+    .food-footer .food-footer-links {
+        gap: 12px;
+    }
+
+    .food-footer .food-footer-links h3 {
+        font-size: 15px;
+    }
+
+    .food-footer .food-footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 20px 0;
+        font-size: 11px;
+    }
+}
+
 
 
 </style>
@@ -3495,7 +4615,7 @@ footer {
       Dịch vụ
      </a>
     </nav>
-    <input class="search" id="search" placeholder="Tìm sản phẩm..."/>
+    <input class="search" id="search" placeholder="Tìm món ăn..."/>
     <button class="cartbtn" onclick="openCart()">
      Giỏ hàng (
      <span id="count">
@@ -3506,40 +4626,47 @@ footer {
    </div>
   </header>
   <main class="wrap" id="home">
-   <section class="hero">
-    <div class="hero-copy">
-     <div class="eyebrow">
-      Món Ngon Xứ Lạng &middot; CỬA HÀNG ONLINE
-     </div>
-<h1>
-   Tinh tế trong<br>
-    từng lựa chọn.
-</h1>
-<p>
-    Khám phá những sản phẩm được lựa chọn
-    dành riêng cho bạn. Trải nghiệm mua sắm
-    tinh tế, tiện lợi tại Món ngon xứ Lạng.
-</p>
-     <button class="primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
-      Lựa chọn ngay &rarr;
-     </button>
+
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">
+      ✦ TINH HOA ẨM THỰC XỨ LẠNG ✦
     </div>
 
-<div class="hero-art">
-    <div class="luxury-hero-decoration">
-        <span class="luxury-hero-monogram">XL</span>
-        <span class="luxury-hero-line"></span>
-        <span class="luxury-hero-label">
-            MÓN NGON XỨ LẠNG
-        </span>
-        <span class="luxury-hero-subtitle">
-            PREMIUM COLLECTION
-        </span>
+    <h1>
+      Hương vị quê nhà<br>
+      <span>Đậm đà khó quên.</span>
+    </h1>
+
+    <p>
+      Khám phá những món ngon và đặc sản xứ Lạng,
+      mang hương vị truyền thống đến từng bữa ăn
+      của gia đình bạn.
+    </p>
+
+    <button class="primary"
+      onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+      KHÁM PHÁ THỰC ĐƠN →
+    </button>
+
+    <div class="food-hero-note">
+      ✦ Đậm đà bản sắc &nbsp; ✦ Chọn lọc kỹ càng
     </div>
-</div>
+  </div>
+
+  <div class="hero-art">
+    <div class="food-hero-emblem">
+      <span>ẨM THỰC</span>
+      <strong>XỨ LẠNG</strong>
+      <small>HƯƠNG VỊ TRUYỀN THỐNG</small>
+    </div>
+  </div>
+</section>
 
 
-   </section>
+
+
    <section id="products">
     <div class="section-head">
      <div>
@@ -3565,115 +4692,193 @@ footer {
    </section>
 
  
+
 <section class="benefits" id="benefits">
 
-    <div class="benefits-heading">
-        <span class="benefits-eyebrow">
-            THE MON NGON XU LANG EXPERIENCE
-        </span>
+  <div class="benefits-heading">
 
-        <h2>Trọn vẹn từng trải nghiệm</h2>
+    <span class="benefits-eyebrow">
+      ✦ TINH HOA ẨM THỰC XỨ LẠNG ✦
+    </span>
 
-        <p>
-            Sự an tâm của bạn là điều chúng tôi trân trọng.
-        </p>
+    <h2>Gửi trọn hương vị quê nhà</h2>
 
-        <span class="benefits-line"></span>
-    </div>
+    <p>
+      Mỗi món ngon là một nét văn hóa,
+      mỗi đơn hàng là một sự trân trọng.
+    </p>
 
-    <div class="benefits-grid">
+    <span class="benefits-line"></span>
 
-        <!-- GIAO HÀNG -->
-        <div class="benefit-item">
+  </div>
 
-            <div class="benefit-icon">
-                <svg viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     aria-hidden="true">
-                    <path d="M3 5h11v12H3z"/>
-                    <path d="M14 9h4l3 4v4h-7"/>
-                    <circle cx="7.5" cy="17" r="2"/>
-                    <circle cx="17.5" cy="17" r="2"/>
-                </svg>
-            </div>
+  <div class="benefits-grid">
 
-            <h3>Giao hàng tận tâm</h3>
+    <!-- HƯƠNG VỊ TRUYỀN THỐNG -->
+    <div class="benefit-item">
 
-            <p>
-                Đóng gói chỉn chu, vận chuyển thuận tiện
-                đến mọi miền đất nước.
-            </p>
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="1.5"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+          <path d="M4 12h16"/>
+          <path d="M5 12a7 7 0 0 0 14 0"/>
+          <path d="M12 5V2"/>
+          <path d="M8 6V3"/>
+          <path d="M16 6V3"/>
+          <path d="M8 20h8"/>
+          <path d="M12 19v1"/>
+        </svg>
+      </div>
 
-        </div>
+      <h3>Đậm đà bản sắc xứ Lạng</h3>
 
-        <!-- THANH TOÁN -->
-        <div class="benefit-item">
-
-            <div class="benefit-icon">
-                <svg viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     aria-hidden="true">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    <path d="m9 12 2 2 4-4"/>
-                </svg>
-            </div>
-
-            <h3>Mua sắm an tâm</h3>
-
-            <p>
-                Thanh toán khi nhận hàng, thông tin
-                đặt mua được bảo vệ cẩn trọng.
-            </p>
-
-        </div>
-
-        <!-- HỖ TRỢ -->
-        <div class="benefit-item">
-
-            <div class="benefit-icon">
-                <svg viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     aria-hidden="true">
-                    <path d="M4 13v-1a8 8 0 0 1 16 0v1"/>
-                    <rect x="2" y="12" width="4" height="7" rx="2"/>
-                    <rect x="18" y="12" width="4" height="7" rx="2"/>
-                    <path d="M20 19c0 2-3 3-6 3h-2"/>
-                </svg>
-            </div>
-
-            <h3>Hỗ trợ chu đáo</h3>
-
-            <p>
-                Lắng nghe, tư vấn và đồng hành cùng bạn
-                trong suốt quá trình mua sắm.
-            </p>
-
-        </div>
+      <p>
+        Gìn giữ hương vị đặc trưng của ẩm thực
+        vùng cao, mang nét tinh túy quê hương
+        đến từng bữa ăn.
+      </p>
 
     </div>
+
+    <!-- CHẤT LƯỢNG -->
+    <div class="benefit-item">
+
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="1.5"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+      </div>
+
+      <h3>Chất lượng được trân trọng</h3>
+
+      <p>
+        Chú trọng lựa chọn từng sản phẩm,
+        giữ gìn chất lượng và sự chỉn chu
+        trước khi trao đến khách hàng.
+      </p>
+
+    </div>
+
+    <!-- GIAO HÀNG -->
+    <div class="benefit-item">
+
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="1.5"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+          <path d="M3 5h11v12H3z"/>
+          <path d="M14 9h4l3 4v4h-7"/>
+          <circle cx="7.5" cy="17" r="2"/>
+          <circle cx="17.5" cy="17" r="2"/>
+        </svg>
+      </div>
+
+      <h3>Gói ghém vị ngon, trao tận tay</h3>
+
+      <p>
+        Đóng gói cẩn thận, hỗ trợ giao hàng
+        thuận tiện để những món ngon xứ Lạng
+        đến gần hơn với mọi gia đình.
+      </p>
+
+    </div>
+
+  </div>
+
+
+<div class="benefits-signature">
+
+    <div class="signature-ornament">
+        <span></span>
+        <span>✦</span>
+        <span></span>
+    </div>
+
+    <p class="signature-quote">
+        “Một chút hương quê, vẹn nguyên tình xứ Lạng”
+    </p>
+
+    <p class="signature-subtitle">
+        TỪ MIỀN ĐẤT BIÊN CƯƠNG ĐẾN BỮA CƠM GIA ĐÌNH
+    </p>
+
+</div>
+
 
 </section>
 
 
-
   </main>
-  <footer>
-   <div class="wrap">
-    &copy; 2026 Món Ngon Xứ Lạng. Website ẩm thực siêu ngon - siêu rẻ - siêu chất lượng.
-   </div>
-  </footer>
+
+ 
+<footer class="food-footer">
+
+    <div class="wrap">
+
+        <div class="food-footer-main">
+
+            <div class="food-footer-brand">
+
+                <div class="food-footer-logo">
+                    ✦ MÓN NGON XỨ LẠNG ✦
+                </div>
+
+                <p>
+                    Gói ghém tinh hoa ẩm thực miền biên viễn,
+                    mang hương vị quê nhà đến gần hơn
+                    với mỗi gia đình Việt.
+                </p>
+
+                <div class="food-footer-slogan">
+                    Hương vị truyền thống · Tấm lòng quê hương
+                </div>
+
+            </div>
+
+            <div class="food-footer-links">
+
+                <h3>Khám phá cửa hàng</h3>
+
+                <a href="#home">Trang chủ</a>
+                <a href="#products">Thực đơn đặc sản</a>
+                <a href="#benefits">Vì sao chọn chúng tôi?</a>
+
+            </div>
+
+        </div>
+
+        <div class="food-footer-bottom">
+
+            <span>
+                © 2026 Món Ngon Xứ Lạng.
+                Bảo lưu mọi quyền.
+            </span>
+
+            <span>
+                ✦ Tinh hoa ẩm thực xứ Lạng ✦
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
   <nav aria-label="Điều hướng Điện thoại" class="mobile-nav">
    <a class="active" href="#home">
     <span class="ico">
@@ -3769,7 +4974,7 @@ footer {
 ========================================== -->
 
 <a
-    href="https://zalo.me/0911845555"
+    href="https://zalo.me/0988930586"
     class="shop-zalo-button"
     target="_blank"
     rel="noopener noreferrer"
@@ -3810,7 +5015,7 @@ footer {
 ========================================== -->
 
 <a
-    href="tel:0911845555"
+    href="tel:0988930586"
     class="shop-call-button"
     aria-label="Gọi điện cho chủ shop"
     title="Gọi ngay cho chủ shop"
