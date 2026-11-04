@@ -2625,7 +2625,7 @@ select:focus {
 
     <div class="admin-stat">
         <span class="admin-stat-label">
-            Tổng sản phẩm
+            Tổng món ăn
         </span>
         <strong class="admin-stat-value"
                 id="statTotal">0</strong>
@@ -2633,7 +2633,7 @@ select:focus {
 
     <div class="admin-stat">
         <span class="admin-stat-label">
-            Sản phẩm còn hàng
+           Ẩm thực còn hàng
         </span>
         <strong class="admin-stat-value"
                 id="statAvailable">0</strong>
@@ -2641,7 +2641,7 @@ select:focus {
 
     <div class="admin-stat">
         <span class="admin-stat-label">
-            Sản phẩm hết hàng
+            Ẩm thực hết hàng
         </span>
         <strong class="admin-stat-value"
                 id="statOutOfStock">0</strong>
@@ -2659,25 +2659,25 @@ select:focus {
 
         <div class="product-list-heading">
             <div>
-                <h2>Danh sách sản phẩm</h2>        
+                <h2>Danh sách ẩm thực</h2>        
             </div>
 
             <button
                 id="openProductModal"
                 type="button"
                 class="btn">
-                + Thêm sản phẩm
+                + Thêm ẩm thực
             </button>
         </div>
 
         <div class="toolbar">
             <input
                 id="search"
-                placeholder="Tìm theo tên sản phẩm..."
+                placeholder="Tìm theo tên ẩm thực..."
             >
 
             <span id="count" class="count">
-                0 sản phẩm
+                0 món ăn
             </span>
         </div>
 
@@ -2685,7 +2685,7 @@ select:focus {
     <div class="product-loading-top">
         <span class="product-loading-spinner"></span>
         <div>
-            <strong id="productLoadingTitle">Đang tải danh sách sản phẩm...</strong>
+            <strong id="productLoadingTitle">Đang tải danh sách món ăn...</strong>
             <p id="productLoadingDescription">Đang kết nối và lấy dữ liệu từ máy chủ.</p>
         </div>
     </div>
@@ -2722,8 +2722,8 @@ select:focus {
 
         <div class="product-modal-header">
             <div>
-                <h2 id="formTitle">Thêm sản phẩm mới</h2>
-                <p>Điền thông tin sản phẩm bên dưới</p>
+                <h2 id="formTitle">Thêm món ăn mới</h2>
+                <p>Điền thông tin món ăn bên dưới</p>
             </div>
 
             <button
@@ -2739,7 +2739,7 @@ select:focus {
 
             <form id="productForm">
 
-                <label for="name">Tên sản phẩm *</label>
+                <label for="name">Tên món ăn *</label>
                 <input
                     id="name"
                     maxlength="120"
@@ -2783,7 +2783,7 @@ select:focus {
                     <option>Khác</option>
                 </select>
 
-                <label for="description">Mô tả sản phẩm</label>
+                <label for="description">Mô tả món ăn</label>
                 <textarea
                     id="description"
                     maxlength="2000"
