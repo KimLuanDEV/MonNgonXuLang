@@ -4793,6 +4793,101 @@ footer.food-footer {
 }
 
 
+
+
+/* FOOTER 3 CỘT */
+
+.food-footer .food-footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr 1.2fr;
+    gap: 35px;
+    align-items: start;
+}
+
+/* THÔNG TIN CỬA HÀNG */
+
+.food-footer .food-footer-contact h3 {
+    color: #f1c78c;
+    font-size: 16px;
+    margin: 0 0 22px;
+}
+
+.food-footer .food-footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.food-footer .food-footer-contact-icon {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(241, 199, 140, .12);
+    border: 1px solid rgba(241, 199, 140, .25);
+    border-radius: 10px;
+    color: #f1c78c;
+    font-size: 20px;
+}
+
+.food-footer .food-footer-contact-item strong {
+    display: block;
+    color: #f1c78c;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.food-footer .food-footer-contact-item p {
+    color: #ead4bd;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .food-footer .food-footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .food-footer .food-footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .food-footer .food-footer-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .food-footer .food-footer-brand {
+        grid-column: auto;
+    }
+
+    .food-footer .food-footer-contact h3 {
+        font-size: 15px;
+        margin-bottom: 17px;
+    }
+
+    .food-footer .food-footer-contact-item {
+        margin-bottom: 16px;
+    }
+
+    .food-footer .food-footer-contact-item p {
+        font-size: 12px;
+    }
+}
+
+
 </style>
  </head>
  <body>
@@ -5052,12 +5147,13 @@ footer.food-footer {
   </main>
 
  
-<footer class="food-footer">
 
+<footer class="food-footer">
     <div class="wrap">
 
         <div class="food-footer-main">
 
+            <!-- GIỚI THIỆU -->
             <div class="food-footer-brand">
 
                 <div class="food-footer-logo">
@@ -5076,6 +5172,7 @@ footer.food-footer {
 
             </div>
 
+            <!-- DANH MỤC -->
             <div class="food-footer-links">
 
                 <h3>Khám phá cửa hàng</h3>
@@ -5083,6 +5180,33 @@ footer.food-footer {
                 <a href="#home">Trang chủ</a>
                 <a href="#products">Thực đơn đặc sản</a>
                 <a href="#benefits">Vì sao chọn chúng tôi?</a>
+
+            </div>
+
+            <!-- ĐỊA CHỈ CỬA HÀNG -->
+            <div class="food-footer-contact">
+
+                <h3>Thông tin cửa hàng</h3>
+
+                <div class="food-footer-contact-item">
+                    <span class="food-footer-contact-icon">⌖</span>
+                    <div>
+                        <strong>Địa chỉ cửa hàng</strong>
+                        <p>
+                            HD09-SP0927, VinHomes OceanPark Gia Lâm
+                        </p>
+                    </div>
+                </div>
+
+                <div class="food-footer-contact-item">
+                    <span class="food-footer-contact-icon">✦</span>
+                    <div>
+                        <strong>Món Ngon Xứ Lạng</strong>
+                        <p>
+                            Đặc sản quê hương – Gửi trao tận tay
+                        </p>
+                    </div>
+                </div>
 
             </div>
 
@@ -5102,8 +5226,8 @@ footer.food-footer {
         </div>
 
     </div>
-
 </footer>
+
 
 
 
