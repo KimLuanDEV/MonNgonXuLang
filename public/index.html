@@ -4888,6 +4888,343 @@ footer.food-footer {
 }
 
 
+/* =========================================
+   MON NGON XU LANG - PRODUCT CARD PREMIUM
+========================================= */
+
+/* LƯỚI SẢN PHẨM */
+#grid.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* CARD */
+#grid .product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+
+    background: #fffefa;
+    border: 1px solid #e8d2b3;
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 18px rgba(100, 53, 27, .055);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+#grid .product:hover {
+    transform: translateY(-5px);
+    border-color: #d0a16c;
+    box-shadow:
+        0 16px 36px rgba(100, 53, 27, .13);
+}
+
+/* ĐƯỜNG VIỀN TRANG TRÍ */
+#grid .product::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18%;
+    right: 18%;
+    height: 3px;
+    z-index: 2;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #d9a35d,
+        transparent
+    );
+}
+
+/* KHUNG ẢNH */
+#grid .product .visual {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    padding: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #fffaf2,
+        #f5e8d6
+    );
+
+    border-bottom: 1px solid #efdfc8;
+    overflow: hidden;
+}
+
+/* ẢNH KHÔNG BỊ CẮT */
+#grid .product .visual img,
+#grid .product .visual .product-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 12px;
+    transform: none;
+    transition: transform .3s ease;
+}
+
+#grid .product:hover .visual img {
+    transform: scale(1.025);
+}
+
+/* NHÃN SẢN PHẨM */
+#grid .product .tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 3;
+
+    max-width: calc(100% - 24px);
+    padding: 7px 12px;
+
+    background: #873522;
+    color: #fff4e1;
+    border: 1px solid #c28c56;
+    border-radius: 30px;
+
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: .3px;
+    line-height: 1.3;
+
+    box-shadow: 0 3px 10px rgba(80, 32, 19, .14);
+}
+
+/* NỘI DUNG CARD */
+#grid .product .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+
+    padding: 20px 18px 18px;
+    background: #fffefa;
+}
+
+/* DANH MỤC */
+#grid .product .info small {
+    display: block;
+    color: #a27a51;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+/* TÊN SẢN PHẨM */
+#grid .product .info h3 {
+    color: #54251c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.45;
+
+    margin: 10px 0 13px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+
+    min-height: 2.9em;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+}
+
+/* GIÁ */
+#grid .product .price {
+    color: #a53c25;
+    font-size: 23px;
+    font-weight: 850;
+    letter-spacing: -.5px;
+    line-height: 1.3;
+
+    margin-top: auto;
+}
+
+/* NÚT THÊM VÀO GIỎ */
+#grid .product .add {
+    width: 100%;
+    margin-top: 17px;
+    padding: 14px 12px;
+
+    border: 1px solid #873522;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #a64b2b,
+        #742c1f
+    );
+
+    color: #fff8ed;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .2px;
+
+    box-shadow:
+        0 5px 12px rgba(116, 44, 31, .14);
+
+    transition:
+        background .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+#grid .product .add:hover {
+    background: linear-gradient(
+        135deg,
+        #bf633a,
+        #8d3825
+    );
+    color: #fff;
+    box-shadow:
+        0 8px 20px rgba(116, 44, 31, .22);
+}
+
+#grid .product .add:active {
+    transform: scale(.97);
+}
+
+#grid .product .add:focus-visible {
+    outline: 3px solid #e4b575;
+    outline-offset: 3px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    #grid.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 17px;
+    }
+}
+
+/* ĐIỆN THOẠI */
+@media (max-width: 600px) {
+    #grid.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 11px;
+    }
+
+    #grid .product {
+        border-radius: 15px;
+    }
+
+    #grid .product .visual {
+        height: auto;
+        aspect-ratio: 1 / 1;
+        padding: 6px;
+    }
+
+    #grid .product .visual img {
+        border-radius: 9px;
+    }
+
+    #grid .product .tag {
+        top: 7px;
+        left: 7px;
+        padding: 5px 7px;
+        font-size: 9px;
+        letter-spacing: 0;
+    }
+
+    #grid .product .info {
+        padding: 12px 10px 11px;
+    }
+
+    #grid .product .info small {
+        font-size: 9px;
+        letter-spacing: .3px;
+    }
+
+    #grid .product .info h3 {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 7px 0 10px;
+        min-height: 2.8em;
+    }
+
+    #grid .product .price {
+        font-size: 17px;
+        letter-spacing: -.3px;
+    }
+
+    #grid .product .add {
+        margin-top: 12px;
+        padding: 11px 5px;
+        border-radius: 9px;
+        font-size: 11px;
+        letter-spacing: 0;
+    }
+
+    #grid .product:hover {
+        transform: none;
+    }
+}
+
+/* MÀN HÌNH RẤT NHỎ */
+@media (max-width: 360px) {
+    #grid.grid {
+        gap: 8px;
+    }
+
+    #grid .product .info {
+        padding: 10px 8px;
+    }
+
+    #grid .product .info h3 {
+        font-size: 13px;
+    }
+
+    #grid .product .price {
+        font-size: 15px;
+    }
+
+    #grid .product .add {
+        font-size: 10px;
+    }
+}
+
+/* GIẢM HIỆU ỨNG CHUYỂN ĐỘNG */
+@media (prefers-reduced-motion: reduce) {
+    #grid .product,
+    #grid .product .visual img,
+    #grid .product .add {
+        transition: none;
+    }
+
+    #grid .product:hover,
+    #grid .product:hover .visual img {
+        transform: none;
+    }
+}
+
+
+
+
 </style>
  </head>
  <body>
