@@ -4565,6 +4565,234 @@ footer.food-footer {
 
 
 
+/* =========================================
+   WELCOME POPUP - AM THUC XU LANG
+========================================= */
+
+#qnWelcome {
+    background: rgba(35, 17, 12, .78);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 14px;
+}
+
+#qnWelcome .qn-welcome-box {
+    width: min(460px, 100%);
+    max-height: min(92dvh, 800px);
+    padding: 32px 30px 25px;
+    border: 1px solid #d5a46b;
+    border-top: 5px solid #a64b2b;
+    border-radius: 23px;
+    background: linear-gradient(
+        155deg,
+        #fffaf1 0%,
+        #f8ead6 100%
+    );
+    box-shadow: 0 25px 80px rgba(0, 0, 0, .35);
+    scrollbar-width: thin;
+    scrollbar-color: #d8b58d transparent;
+}
+
+#qnWelcome .qn-welcome-close {
+    background: #f0dfc8;
+    color: #742c1f;
+}
+
+#qnWelcome .qn-welcome-brand {
+    color: #a64b2b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+#qnWelcome .qn-welcome-gift {
+    width: 74px;
+    height: 74px;
+    margin: 20px auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f8dfb9, #ebc18c);
+    color: #8d3b24;
+    border: 1px solid #d8aa70;
+    box-shadow: 0 7px 20px rgba(116, 44, 31, .10);
+}
+
+#qnWelcome .qn-welcome-eyebrow {
+    color: #a7794e;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    margin-bottom: 12px;
+}
+
+#qnWelcome .qn-welcome-title {
+    color: #742c1f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+#qnWelcome .qn-welcome-subtitle {
+    color: #b65b35;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#qnWelcome .qn-welcome-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 18px 0 8px;
+    color: #b98b55;
+}
+
+#qnWelcome .qn-welcome-divider span {
+    width: 45px;
+    height: 1px;
+    background: #d5af81;
+}
+
+#qnWelcome .qn-welcome-message {
+    color: #765c49;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 15px 0 20px;
+}
+
+#qnWelcome .qn-welcome-message strong {
+    color: #8f3b27;
+    font-weight: 800;
+}
+
+#qnWelcome .qn-welcome-wish {
+    background: #f3e0c4;
+    border: 1px solid #e5c59c;
+    color: #8c4a2d;
+    border-radius: 12px;
+    padding: 13px 16px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#qnWelcome .qn-welcome-start {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #a64b2b, #742c1f);
+    color: #fff8ed;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    box-shadow: 0 7px 18px rgba(116, 44, 31, .20);
+}
+
+#qnWelcome .qn-welcome-start:hover {
+    background: linear-gradient(135deg, #bc6038, #8c3826);
+}
+
+#qnWelcome .qn-install-btn {
+    width: 100%;
+    margin-top: 11px;
+    padding: 13px 10px;
+    border: 1px solid #d7b184;
+    border-radius: 12px;
+    background: #fff7eb;
+    color: #87432b;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+#qnWelcome .qn-install-btn:hover {
+    background: #f4e2c9;
+}
+
+#qnWelcome .qn-install-btn[hidden] {
+    display: none !important;
+}
+
+#qnWelcome .qn-welcome-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e7cfaf;
+    color: #87432b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#qnWelcome .qn-welcome-footer span {
+    display: block;
+    margin-top: 7px;
+    color: #a27b5b;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .2px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    #qnWelcome {
+        padding: 12px;
+    }
+
+    #qnWelcome .qn-welcome-box {
+        width: 100%;
+        max-height: 92dvh;
+        padding: 25px 19px 20px;
+        border-radius: 19px;
+    }
+
+    #qnWelcome .qn-welcome-gift {
+        width: 60px;
+        height: 60px;
+        margin: 14px auto 12px;
+    }
+
+    #qnWelcome .qn-welcome-gift svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    #qnWelcome .qn-welcome-title {
+        font-size: 24px;
+    }
+
+    #qnWelcome .qn-welcome-subtitle {
+        font-size: 13px;
+    }
+
+    #qnWelcome .qn-welcome-message {
+        font-size: 12px;
+        line-height: 1.7;
+        margin: 12px 0 16px;
+    }
+
+    #qnWelcome .qn-welcome-wish {
+        font-size: 12px;
+        padding: 11px;
+    }
+
+    #qnWelcome .qn-welcome-start {
+        font-size: 11px;
+        padding: 14px 9px;
+    }
+
+    #qnWelcome .qn-install-btn {
+        font-size: 11px;
+        padding: 12px 9px;
+    }
+}
+
+
 </style>
  </head>
  <body>
@@ -5119,8 +5347,9 @@ footer.food-footer {
 
 
 
-<!-- POPUP CHÀO MỪNG KHÁCH HÀNG -->
-<div class="qn-welcome" id="qnWelcome"
+<!-- POPUP CHÀO MỪNG - MÓN NGON XỨ LẠNG -->
+<div class="qn-welcome"
+     id="qnWelcome"
      role="dialog"
      aria-modal="true"
      aria-labelledby="qnWelcomeTitle"
@@ -5140,65 +5369,101 @@ footer.food-footer {
         </div>
 
         <div class="qn-welcome-gift">
-            ♡
+            <svg viewBox="0 0 24 24"
+                 width="40"
+                 height="40"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="1.4"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 aria-hidden="true">
+                <path d="M4 12h16"/>
+                <path d="M5 12a7 7 0 0 0 14 0"/>
+                <path d="M12 5V2"/>
+                <path d="M8 6V3"/>
+                <path d="M16 6V3"/>
+                <path d="M8 20h8"/>
+            </svg>
+        </div>
+
+        <div class="qn-welcome-eyebrow">
+            HƯƠNG VỊ QUÊ HƯƠNG · TÌNH NGƯỜI XỨ LẠNG
         </div>
 
         <h2 class="qn-welcome-title"
             id="qnWelcomeTitle">
-            Chào mừng quý khách!
+            Chào mừng bạn đến<br>
+            với hương vị xứ Lạng!
         </h2>
 
         <div class="qn-welcome-subtitle">
-            Rất vui được đón tiếp bạn
+            Một miền đặc sản, ngàn điều thương nhớ
+        </div>
+
+        <div class="qn-welcome-divider">
+            <span></span>
+            ✦
+            <span></span>
         </div>
 
         <p class="qn-welcome-message">
             Cảm ơn bạn đã ghé thăm
-            <strong>MÓN NGON XỨ LẠNG</strong>.
-            Sự hiện diện của bạn là niềm vui
-            và động lực của chúng tôi.
+            <strong>Món Ngon Xứ Lạng</strong>!
             <br><br>
-            Chúc bạn có những phút giây
-            mua sắm thật vui vẻ và tìm được
-            những sản phẩm thật ưng ý!
+            Từ những hương vị mộc mạc nơi miền
+            biên viễn, chúng tôi mong được mang
+            đến bạn những món ngon đậm đà
+            bản sắc quê hương.
+            <br><br>
+            Mời bạn cùng khám phá và lựa chọn
+            những đặc sản yêu thích cho
+            bản thân và gia đình!
         </p>
 
         <div class="qn-welcome-wish">
-            ✦ Chúc bạn một ngày thật nhiều
-            niềm vui, hạnh phúc và may mắn ✦
+            ✦ Chúc bạn chọn được món ngon,
+            thưởng thức trọn vị quê nhà ✦
         </div>
 
         <button class="qn-welcome-start"
                 type="button"
                 id="qnWelcomeStart">
-            BẮT ĐẦU KHÁM PHÁ CỬA HÀNG →
+            KHÁM PHÁ ĐẶC SẢN XỨ LẠNG →
         </button>
 
-        
-<button class="qn-install-btn"
-        id="qnInstallBtn"
-        type="button">
-    <svg width="20" height="20" viewBox="0 0 24 24"
-         fill="none" stroke="currentColor"
-         stroke-width="1.8"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         aria-hidden="true">
-        <path d="M12 3v12"/>
-        <path d="m7 10 5 5 5-5"/>
-        <path d="M5 17v3h14v-3"/>
-    </svg>
-    <span>Thêm cửa hàng vào màn hình chính</span>
-</button>
+        <button class="qn-install-btn"
+                id="qnInstallBtn"
+                type="button">
 
+            <svg width="20"
+                 height="20"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="1.8"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 aria-hidden="true">
+                <path d="M12 3v12"/>
+                <path d="m7 10 5 5 5-5"/>
+                <path d="M5 17v3h14v-3"/>
+            </svg>
+
+            <span>Lưu cửa hàng vào màn hình chính</span>
+
+        </button>
 
         <div class="qn-welcome-footer">
-            Cảm ơn bạn đã tin tưởng và
-            đồng hành cùng shop ♡
+            MÓN NGON XỨ LẠNG
+            <span>
+                Gói ghém hương quê · Gửi trao yêu thương
+            </span>
         </div>
 
     </div>
 </div>
+
 
 
   <script >
