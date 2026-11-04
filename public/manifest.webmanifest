@@ -1,8 +1,8 @@
 
 {
-  "name": "XXX Shop",
-  "short_name": "XXX Shop",
-  "description": "Cửa hàng trực tuyến XXX Shop",
+  "name": "Món ngon xứ Lạng",
+  "short_name": "Món ngon xứ Lạng",
+  "description": "Cửa hàng trực tuyến Món ngon xứ Lạng",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

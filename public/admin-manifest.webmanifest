@@ -1,10 +1,10 @@
 
 {
-  "id": "/admin-xxx.html",
-  "name": "XXX Shop - Admin",
-  "short_name": "XXX Admin",
-  "description": "Quản lý sản phẩm XXX Shop",
-  "start_url": "/admin-xxx.html",
+  "id": "/admin-monngonxulang.html",
+  "name": "Món ngon xứ Lạng - Admin",
+  "short_name": "Món ngon xứ Lạng Admin",
+  "description": "Quản lý thực phẩm Món ngon xứ Lạng",
+  "start_url": "/admin-monngonxualang.html",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f5f6f8",
